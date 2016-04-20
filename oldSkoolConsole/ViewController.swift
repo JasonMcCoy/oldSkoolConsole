@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        terminalLabel.text = ""
+        terminalLabel.text = ""
 //        
 //        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere++ {
 //            
@@ -35,8 +35,14 @@ class ViewController: UIViewController {
 //            terminalLabel.text = txt
 //        }
         
+        var x = 0
         
-        
+        repeat {
+            var txt = terminalLabel.text!
+            txt += tronPhrases[x]
+            terminalLabel.text = txt
+            x++
+        } while x < tronPhrases.count
         
     }
 
