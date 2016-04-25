@@ -27,23 +27,23 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         terminalLabel.text = ""
-//        
-//        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere++ {
-//            
-//            var txt = terminalLabel.text!
-//            txt += tronPhrases[putSomethingInHere]
-//            terminalLabel.text = txt
-//        }
         
-        var x = 0
-        
-        repeat {
+        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere+=1 {
+            
             var txt = terminalLabel.text!
-            txt += tronPhrases[x]
+            txt += tronPhrases[putSomethingInHere]
             terminalLabel.text = txt
-            x++
-        } while x < tronPhrases.count
+        }
         
+//        var x = 0
+//        
+//        repeat {
+//            var txt = terminalLabel.text!
+//            txt += tronPhrases[x]
+//            terminalLabel.text = txt
+//            x++
+//        } while x < tronPhrases.count
+//        
     }
 
     override func didReceiveMemoryWarning() {
