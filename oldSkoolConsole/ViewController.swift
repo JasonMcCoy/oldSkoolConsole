@@ -28,21 +28,21 @@ class ViewController: UIViewController {
         
         terminalLabel.text = ""
         
-//        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere+=1 {
-//            
-//            var txt = terminalLabel.text!
-//            txt += tronPhrases[putSomethingInHere]
-//            terminalLabel.text = txt
-//        }
-        
-        var x = 0
-        
-        repeat {
+        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere+=1 {
+            
             var txt = terminalLabel.text!
-            txt += tronPhrases[x]
+            txt += tronPhrases[putSomethingInHere]
             terminalLabel.text = txt
-            x+=1
-        } while x < tronPhrases.count
+        }
+        
+//        var x = 0
+//        
+//        repeat {
+//            var txt = terminalLabel.text!
+//            txt += tronPhrases[x]
+//            terminalLabel.text = txt
+//            x+=1
+//        } while x < tronPhrases.count
 
         
         
