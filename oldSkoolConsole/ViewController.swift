@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         
         terminalLabel.text = ""
         
-        for var putSomethingInHere = 0; putSomethingInHere < tronPhrases.count; putSomethingInHere+=1 {
+        for putSomethingInHere in 0 ..< tronPhrases.count {
             
             var txt = terminalLabel.text!
             txt += tronPhrases[putSomethingInHere]
